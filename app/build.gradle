@@ -22,21 +22,21 @@ android {
         applicationId "com.diewland.ssbwear2"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [
                 // The hostname is used when building the intent-filter, so the TWA is able to
                 // handle Intents to open https://svgomg.firebaseapp.com.
-                hostName: "diewland.github.io",
-                defaultUrl: "https://diewland.github.io/ssbwear",
+                hostName: "diewland.com",
+                defaultUrl: "https://ssb.diewland.com",
                 launcherName: "SSBWear",
                 // This variable below expresses the relationship between the app and the site,
                 // as documented in the TWA documentation at
                 // https://developers.google.com/web/updates/2017/10/using-twa#set_up_digital_asset_links_in_an_android_app
                 // and is injected into the AndroidManifest.xml
                 assetStatements: '[{ "relation": ["delegate_permission/common.handle_all_urls"], ' +
-                        '"target": {"namespace": "web", "site": "https://diewland.github.io/ssbwear"}}]'
+                        '"target": {"namespace": "web", "site": "https://ssb.diewland.com"}}]'
         ]
 
         // This attribute sets the status bar color for the TWA. It can be either set here or in
