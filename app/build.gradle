@@ -28,7 +28,7 @@ android {
         manifestPlaceholders = [
                 // The hostname is used when building the intent-filter, so the TWA is able to
                 // handle Intents to open https://svgomg.firebaseapp.com.
-                hostName: "diewland.com",
+                hostName: "ssb.diewland.com",
                 defaultUrl: "https://ssb.diewland.com",
                 launcherName: "SSBWear",
                 // This variable below expresses the relationship between the app and the site,
